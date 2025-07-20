@@ -2004,3 +2004,38 @@ textarea.form-input::-webkit-resizer { display: none; }
   transform: scale(1.1); /* Membesarkan gambar 10% saat hover */
 }
 
+
+/* --------------------- Loading Animation ---------------------------- */
+/* Preloader Fullscreen Blur */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5); /* semi gelap */
+  backdrop-filter: blur(10px); /* efek blur */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Spinner Bulat */
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 6px solid black;
+  border-top: 6px solid #ffdb70;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* Animasi Muter */
+@keyframes spin {
+  0% { transform: rotate(0deg);}
+  100% { transform: rotate(360deg);}
+}
+
+
+
