@@ -25,6 +25,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
 </head>
 
 <body>
@@ -262,7 +269,7 @@
           - My Skills
         -->
 
-        <section class="testimonials">
+        <section class="testimonials" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
 
           <h3 class="h3 testimonials-title">My Skills</h3>
 
@@ -624,7 +631,7 @@
           - service
         -->
 
-        <section class="service">
+        <section class="service" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
 
           <h3 class="h3 service-title">What i'm doing</h3>
 
@@ -2114,8 +2121,13 @@
       setTimeout(() => {
           document.getElementById('preloader').style.display = 'none';
           document.getElementById('main-content').style.display = 'block';
+            AOS.refresh(); // Penting supaya AOS tau konten udah muncul
         }, 1500);
       });
+  </script>
+
+  <script>
+    AOS.init();
   </script>
 
 </body>
