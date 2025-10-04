@@ -2003,3 +2003,26 @@ textarea.form-input::-webkit-resizer { display: none; }
 .cv-highlight:hover img {
   transform: scale(1.1); /* Membesarkan gambar 10% saat hover */
 }
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-link ion-icon {
+  font-size: 22px;
+  color: #ffffff; /* default putih */
+  background-color: transparent;
+  border-radius: 50%;
+  padding: 6px;
+  transition: all 0.3s ease;
+}
+
+.icon-link:hover ion-icon {
+  transform: scale(1.2);
+  color: #ffffff;
+  background-color: #2563eb; /* biru Tailwind (blue-600) */
+  box-shadow: 0 0 8px rgba(37, 99, 235, 0.5);
+}
+
